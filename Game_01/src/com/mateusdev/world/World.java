@@ -12,8 +12,9 @@ public class World {
 	
 	public static BufferedImage enviroment;
 	
-	private Tile[] tiles;
+	public static Tile[] tiles;
 	public static int WIDTH, HEIGHT;
+	public static final int TILE_SIZE = 16;
 
 	public World(String path)
 	{
@@ -36,145 +37,165 @@ public class World {
 					switch (pixelAtual)
 					{
 					    case (0xFFBCB380):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE);
 					    break;
 					    case (0xFFBCB381):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE1);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE1);
 					    break;
 					    case (0xFFBCB382):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE2);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE2);
 					    break;
 					    case (0xFFBCB383):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE3);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE3);
 					    break;
 					    case (0xFFBCB384):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE4);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE4);
 					    break;
 					    case (0xFFBCB385):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE5);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE5);
 					    break;
 					    case (0xFFBCB386):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE6);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE6);
 					    break;
 					    case (0xFFBCB387):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE7);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE7);
 					    break;
 					    case (0xFFBCB388):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE8);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE8);
 					    break;
 					    case (0xFFBCB389):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE9);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE9);
 					    break;
 					    case (0xFFBCB390):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE10);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE10);
 					    break;
 					    case (0xFFBCB391):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE11);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE11);
 					    break;
 					    case (0xFFBCB350):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE);
 					    break;
 					    case (0xFFBCB351):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE1);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE1);
 					    break;
 					    case (0xFFBCB352):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE2);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE2);
 					    break;
 					    case (0xFFBCB353):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE3);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE3);
 					    break;
 					    case (0xFFBCB354):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE4);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE4);
 					    break;
 					    case (0xFFBCB355):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE5);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE5);
 					    break;
 					    case (0xFFBCB356):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE6);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE6);
 					    break;
 					    case (0xFFBCB357):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE7);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE7);
 					    break;
 					    case (0xFFBCB358):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE8);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE8);
 					    break;
 					    case (0xFFBCB359):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE9);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE9);
 					    break;
 					    case (0xFFBCB360):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE10);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE10);
 					    break;
 					    case (0xFFBCB361):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE11);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE11);
 					    break;
 					    case (0xFFBCB362):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE12);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE12);
 					    break;
 					    case (0xFFBCB363):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE13);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE13);
 					    break;
 					    case (0xFFBCB364):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE14);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE14);
 					    break;
 					    case (0xFFFFFFFF):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE00);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE00);
 					    break;
 					    case (0xFFFFFFF0):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE01);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE01);
 					    break;
 					    case (0xFF000000):
-					        tiles[xx + (yy * WIDTH)] = new FloorTile(xx * 16, yy * 16, Tile.TILE_FLOOR);
+					        tiles[xx + (yy * WIDTH)] = new FloorTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_FLOOR);
 					    break;
 					    case (0xFFBCB320):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE00);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE00);
 					    break;
 					    case (0xFFBCB321):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE01);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE01);
 					    break;
 					    case (0xFFBCB322):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE02);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE02);
 					    break;
 					    case (0xFFBCB323):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE03);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE03);
 					    break;
 					    case (0xFFBCB324):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE04);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE04);
 					    break;
 					    case (0xFFBCB325):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE05);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE05);
 					    break;
 					    case (0xFFBCB326):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE06);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE06);
 					    break;
 					    case (0xFFBCB327):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE07);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE07);
 					    break;
 					    case (0xFFBCB328):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE08);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE08);
 					    break;
 					    case (0xFFBCB329):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE09);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE09);
 					    break;
 					    case (0xFFBCB330):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE010);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE010);
 					    break;
 					    case (0xFFBCB331):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TILE_TREE011);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_TREE011);
 					    break;
 					    case (0xFFBCB111):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE02);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE02);
 					    break;
 					    case (0xFFBCB110):
-					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * 16, yy * 16, Tile.TREE03);
+					        tiles[xx + (yy * WIDTH)] = new WallTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TREE03);
 					    break;
 					    default:
-					        tiles[xx + (yy * WIDTH)] = new FloorTile(xx * 16, yy * 16, Tile.TILE_FLOOR);
+					        tiles[xx + (yy * WIDTH)] = new FloorTile(xx * TILE_SIZE, yy * TILE_SIZE, Tile.TILE_FLOOR);
 					}
 				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static boolean isFree(int xNext, int yNext)
+	{
+		int x1 = xNext / TILE_SIZE;
+		int y1 = yNext / TILE_SIZE;
+		
+		int x2 = (xNext + TILE_SIZE - 1) / TILE_SIZE;
+		int y2 = yNext / TILE_SIZE;
+		
+		int x3 = xNext / TILE_SIZE;
+		int y3 = (yNext + TILE_SIZE - 1) / TILE_SIZE;
+		
+		int x4 = (xNext + TILE_SIZE - 1) / TILE_SIZE;
+		int y4 = (yNext + TILE_SIZE - 1) / TILE_SIZE;
+		
+		return !((tiles[x1 + (y1 * World.WIDTH)] instanceof WallTile) &&
+				(tiles[x2 + (y2 * World.WIDTH)] instanceof WallTile) &&
+				(tiles[x3 + (y3 * World.WIDTH)] instanceof WallTile) ||
+				(tiles[x4 + (y4 * World.WIDTH)] instanceof WallTile));
 	}
 
 	public void render(Graphics g)
