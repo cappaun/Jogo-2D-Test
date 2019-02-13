@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 
 import com.mateusdev.main.Game;
 import com.mateusdev.world.Camera;
+import com.mateusdev.world.World;
 
 public class Player extends Entity
 {
@@ -67,20 +68,12 @@ public class Player extends Entity
 			moved = true;
 			dir = right_dir;
 			x+= speed;
-			
-			up = false;
-			down = false;
-			left = false;
 		}
 		else if(left)
 		{
 			moved = true;
 			dir = left_dir;
 			x-= speed;
-			
-			up = false;
-			down = false;
-			right = false;
 		}
 		
 		if(up)
@@ -88,21 +81,12 @@ public class Player extends Entity
 			moved = true;
 			dir = up_dir;
 			y-= speed;
-			
-			right = false;
-			left = false;
-			down = false;
 		}
 		else if(down)
 		{
 			moved = true;
 			dir = down_dir;
 			y+= speed;
-			
-			up = false;
-			right = false;
-			left = false;
-			
 		}
 		
 		if(moved)
@@ -121,8 +105,8 @@ public class Player extends Entity
 			}
 		}
 		
-		Camera.x = this.getX() - (Game.WIDTH / 2);
-		Camera.y = this.getY() - (Game.HEIGHT / 2);
+		Camera.x = Camera.clamp(this.getX() - (Game.WIDTH / 2), 0, World.WIDTH * 16 - Game.WIDTH);
+		Camera.y = Camera.clamp(this.getY() - (Game.HEIGHT / 2), 0, World.HEIGHT * 16 - Game.HEIGHT);
 	}
 	
 	public void render(Graphics g)
